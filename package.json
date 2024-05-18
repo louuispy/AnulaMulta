@@ -1,0 +1,21 @@
+{
+  "name": "frontendlegal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 3004",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "next": "^14.2.3",
+    "prisma": "^5.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
