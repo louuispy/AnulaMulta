@@ -19,13 +19,15 @@ const Home = () => {
 
   return (
     <>
+    <div id="container-display-center">
+
       <div className="container mx-auto mt-8 max-w-[560px]" id="tasks-title">
         <div className="flex justify-between items-center pb-4 border-b border-dashed border-gray-900 mb-4">
           <h1 className="text-3xl font-semibold" id="title">Tasks</h1>
           <Link
             className="link"
             href="/create" id="link"
-          >
+            >
             Create a New Task
           </Link>
         </div>
@@ -50,11 +52,12 @@ const Home = () => {
       <Head>
         <title>Task</title>
       </Head>
-      <div>
+      <div id="voltar-pomodoro-inicial">
                         <Link href="/" className="voltar-pomodoro "id="link-voltar-pomodoro">
                             <button id="voltar-pomodoro">Tela Inicial</button>
                             </Link>
                     </div>
+          </div>
     </>
   );
 };
