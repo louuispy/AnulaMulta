@@ -23,11 +23,11 @@ export default function Login() {
                     <input id="password" type="password" placeholder='type your password'/>
                 </form>
                 <form>
+                    <Link href="/">
                         <button id="login" className="enviar" type="submit">
-                    
                         Login with Email
-                    
                     </button>
+                    </Link>
                 </form>
             </main>
 

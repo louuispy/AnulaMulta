@@ -60,7 +60,7 @@ const Menu = () => {
             <nav className="navbar">
                 <div className="max-width">
                     <div className="logo">
-                        <a href="/">Pomofocus</a>
+                        <a href="/">POMOFOCUS</a>
                     </div>
                     <ul className="menu">
                         <li><a href="/tasks" className="menu-btn">Tasks</a></li>
@@ -72,31 +72,47 @@ const Menu = () => {
                 </div>
             </nav>
             <div className="pomodoro-container">
-                <h1>Pomodoro Timer</h1>
+                <h1>POMODORO</h1>
                 <div className="timer">{formatTime(time)}</div>
                 <div className="controls">
                     <div className="button-container">
                         <div className="button-container">
-                          <button className={"btn " + (isActive ? 'pause-btn' : 'start-btn')} onClick={toggleTimer}>
+                          <button className={"btn " + (isActive ? 'pause-btn' : 'start-btn')} onClick={toggleTimer} id="button">
                             {isActive ? 'Pause' : 'Start'}
                             </button>
                     </div>
                     <div className="button-container">
-                        <button className="btn" onClick={resetTimer}>
+                        <button className="btn" onClick={resetTimer} id="button">
                             Reset
                         </button>
+
+                        <div className="button-container">
+                          <button className="btn add-time-btn" onClick={() => addTime(60)} id="button">
+                              + Add 1 Minute
+                          </button>
+
                     </div>
                     <div className="button-container">
-                        <button className="btn add-time-btn" onClick={() => addTime(60)}>
-                            + Add 1 Minute
+                        <Link href="/short-break">
+
+                        <button className="btn add-time-btn" id="button">
+                            Short Break
                         </button>
+                        </Link>
+
+                        <Link href="/long-break">
+                        <button className="btn add-time-btn" id="button">
+                            Long Break
+                        </button>
+                        </Link>
                         
                     </div>
                 </div>
             </div>
         </div>
         </div>
-    );
-};
+        </div>
+        );
+    };
 
 export default Menu;

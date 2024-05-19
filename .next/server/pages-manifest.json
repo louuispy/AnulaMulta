@@ -2,10 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/tasks": "pages/tasks.js",
-  "/api/tasks": "pages/api/tasks.js",
-  "/[id]/edit": "pages/[id]/edit.js",
   "/": "pages/index.js",
-  "/api/tasks/[id]": "pages/api/tasks/[id].js",
-  "/[id]/delete": "pages/[id]/delete.js"
+  "/login": "pages/login.js",
+  "/long-break": "pages/long-break.js",
+  "/sign_up": "pages/sign_up.js",
+  "/tasks": "pages/tasks.js",
+  "/api/tasks": "pages/api/tasks.js"
 }

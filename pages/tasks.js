@@ -2,6 +2,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import styles from '../app/styles/tasks.css'
 
 const Home = () => {
   const [tasks, setTasks] = useState([]);
@@ -18,34 +19,45 @@ const Home = () => {
 
   return (
     <>
-      <div className="container mx-auto mt-8 max-w-[560px]">
+    <div id="container-display-center">
+
+      <div className="container mx-auto mt-8 max-w-[560px]" id="tasks-title">
         <div className="flex justify-between items-center pb-4 border-b border-dashed border-gray-900 mb-4">
-          <h1 className="text-3xl font-semibold">Tasks</h1>
+          <h1 className="text-3xl font-semibold" id="title">Tasks</h1>
           <Link
-            className="bg-green-600 hover:bg-opacity-80 text-white rounded-lg px-4 py-2 duration-200"
-            href="/create"
-          >
-            Create New
+            className="link"
+            href="/create" id="link"
+            >
+            Create a New Task
           </Link>
         </div>
-        <ul>
+        <div className="container-list-task">
+
+        <ul className="list-tasks">
           {tasks.map((task) => (
             <li key={task.id} className="py-2 flex justify-between w-full">
               <span>
                 <strong>{task.title}</strong> - {task.description}
               </span>
-              <span className="flex gap-2">
-                <Link className="text-blue-700 underline hover:no-underline" href={`/${task.id}/edit`}>Edit</Link>
-                <Link className="text-red-500 underline hover:no-underline" href={`/${task.id}/delete`}>Delete</Link>
+              <span className="edit-delete">
+                <Link className="edit" href={`/${task.id}/edit`}>Edit</Link>
+                <Link className="delete" href={`/${task.id}/delete`}>Delete</Link>
               </span>
             </li>
           ))}
           {tasks?.length < 1 && <div className="py-2">No data</div>} 
         </ul>
       </div>
+          </div>
       <Head>
         <title>Task</title>
       </Head>
+      <div id="voltar-pomodoro-inicial">
+                        <Link href="/" className="voltar-pomodoro "id="link-voltar-pomodoro">
+                            <button id="voltar-pomodoro">Tela Inicial</button>
+                            </Link>
+                    </div>
+          </div>
     </>
   );
 };

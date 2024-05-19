@@ -3,6 +3,7 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import styles from "../app/styles/create.css"
 
 const Create = () => {
   const router = useRouter();
@@ -35,36 +36,38 @@ const Create = () => {
 
   return (
     <>
-      <div className="container mx-auto mt-8 max-w-[560px]">
-        <div className="flex justify-between items-center pb-4 border-b border-dashed border-gray-900 mb-4">
-          <h1 className="text-3xl font-semibold">Create Task</h1>
+    <div className="container-center">
+
+      <div className="container">
+        <div className="create-title">
+          <h1 className="title">Create Task</h1>
         </div>
         <form>
-          <div className="mb-4">
+          <div className="title-create-task-label">
             <label>Title</label>
             <input
-              className="mt-1 px-4 py-2 border border-gray-300 rounded-md block w-full"
+              className="input-title"
               type="text"
               name="title"
               value={task?.title}
               onChange={onChange}
-            />
+              />
           </div>
-          <div className="mb-4">
+          <div className="description-task">
             <label>Description</label>
             <input
-              className="mt-1 px-4 py-2 border border-gray-300 rounded-md block w-full"
+              className="input-description"
               type="text"
               name="description"
               value={task?.description}
               onChange={onChange}
-            />
+              />
           </div>
           <button
-            className="bg-green-600 hover:bg-opacity-80 text-white rounded-lg px-4 py-2 duration-200 w-full"
+            className="create-task"
             type="button"
             onClick={handleCreate}
-          >
+            >
             Create Task
           </button>
         </form>
@@ -72,6 +75,7 @@ const Create = () => {
       <Head>
         <title>Create Task</title>
       </Head>
+            </div>
     </>
   );
 };
