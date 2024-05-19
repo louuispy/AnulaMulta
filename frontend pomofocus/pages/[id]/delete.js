@@ -43,14 +43,16 @@ const Delete = () => {
 
   return (
     <>
+    <div id="container-center">
+
       <div className="title">
         <div className="title-delete">
-          <h1 className="title-h1">Delete Task</h1>
         </div>
         <div className="container">
 
         <form>
           <div className="do-you-want-to-delete">
+          <h1 className="title-h1">Delete Task</h1>
             Are you sure to delete <strong>{task?.title}</strong>?
           </div>
           <div className="controls">
@@ -74,6 +76,7 @@ const Delete = () => {
         <title>Delete Task</title>
       </Head>
               </div>
+                </div>
     </>
   );
 };
