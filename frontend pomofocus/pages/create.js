@@ -36,6 +36,8 @@ const Create = () => {
 
   return (
     <>
+    <div className="container-center">
+
       <div className="container">
         <div className="create-title">
           <h1 className="title">Create Task</h1>
@@ -49,7 +51,7 @@ const Create = () => {
               name="title"
               value={task?.title}
               onChange={onChange}
-            />
+              />
           </div>
           <div className="description-task">
             <label>Description</label>
@@ -59,13 +61,13 @@ const Create = () => {
               name="description"
               value={task?.description}
               onChange={onChange}
-            />
+              />
           </div>
           <button
             className="create-task"
             type="button"
             onClick={handleCreate}
-          >
+            >
             Create Task
           </button>
         </form>
@@ -73,6 +75,7 @@ const Create = () => {
       <Head>
         <title>Create Task</title>
       </Head>
+            </div>
     </>
   );
 };
