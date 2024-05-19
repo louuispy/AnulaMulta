@@ -10,9 +10,13 @@ body {
     background-color: #c00688;
 }
 
+#container-center {
+    display: flex;
+    justify-content: center;
+}
+
 .container {
     color: #fff;
-    margin-left: 720px;
     margin-top: 250px;
     padding: 25px;
     padding-bottom: 35px;
