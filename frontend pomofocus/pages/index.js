@@ -85,6 +85,12 @@ const Menu = () => {
                         <button className="btn" onClick={resetTimer} id="button">
                             Reset
                         </button>
+
+                        <div className="button-container">
+                          <button className="btn add-time-btn" onClick={() => addTime(60)} id="button">
+                              + Add 1 Minute
+                          </button>
+
                     </div>
                     <div className="button-container">
                         <Link href="/short-break">
@@ -93,13 +99,20 @@ const Menu = () => {
                             Short Break
                         </button>
                         </Link>
+
+                        <Link href="/long-break">
+                        <button className="btn add-time-btn" id="button">
+                            Long Break
+                        </button>
+                        </Link>
                         
                     </div>
                 </div>
             </div>
         </div>
         </div>
-    );
-};
+        </div>
+        );
+    };
 
 export default Menu;
