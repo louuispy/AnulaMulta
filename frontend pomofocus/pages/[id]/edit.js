@@ -50,6 +50,8 @@ const Edit = () => {
 
   return (
     <>
+    <div id="container-center">
+
       <div className="container">
         <div className="flex justify-between items-center pb-4 border-b border-dashed border-gray-900 mb-4">
           <h1 className="text-3xl font-semibold">Edit Task</h1>
@@ -63,7 +65,7 @@ const Edit = () => {
               name="title"
               value={task?.title}
               onChange={onChange}
-            />
+              />
           </div>
           <div className="description-task">
             <label>Description</label>
@@ -73,13 +75,13 @@ const Edit = () => {
               name="description"
               value={task?.description}
               onChange={onChange}
-            />
+              />
           </div>
           <button
             className="edit-task"
             type="button"
             onClick={handleUpdate}
-          >
+            >
             Edit Task
           </button>
         </form>
@@ -87,6 +89,7 @@ const Edit = () => {
       <Head>
         <title>Edit Task</title>
       </Head>
+            </div>
     </>
   );
 };
