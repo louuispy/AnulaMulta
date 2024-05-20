@@ -24,9 +24,10 @@ Com isso, o site conta com funcionalidades de `Pomodoro`, com o timer de 25 minu
 Além disso, a aplicação conta com funcionalidades para criação de tasks, ou seja, as tarefas que você pretende fazer neste ciclo de pomodoro. Você pode editar e excluir as tasks.
 
 ## Quer saber mais detalhes sobre como fiz essa aplicação? 💻
-Caso você queira saber mais sobre como foi a criação desta aplicação, dá uma olhada nos arquivos presentes nas pastas `backend`e `frontend`, commitadas logo acima! No backend tem também uma documentação das rotas com o swagger, explicando todos os caminhos e funcionalidades das rotas (endereço: "http://localhost:3002/swagger-documentation").
+Caso você queira saber mais sobre como foi a criação desta aplicação, dá uma olhada nos arquivos presentes nas pastas `backend`e `frontend`, commitadas logo acima! No backend tem também uma documentação das rotas com o swagger, explicando todos os caminhos e funcionalidades das rotas (endereço: "http://localhost:3002/swagger-documentation"). Além disso, aqui está o link do deploy do projeto: https://pomofocus-anula-multa.vercel.app/
 
 É isso gente, espero que gostem do projeto! 😊💻
+
 
 
 
